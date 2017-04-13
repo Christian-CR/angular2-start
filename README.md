@@ -1,6 +1,6 @@
 # Proyecto iniciador Angular 2
 Iniciador
 
-**Iniciador**
+**Requiere intalar npm**
 
-## Iniciador
+## proyecto para iniciar angular 2
