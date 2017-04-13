@@ -1,0 +1,65 @@
+
+@import "compass/reset";
+@import "compass/css3";
+
+$tipo: Roboto, sans-serif;
+$piel: #CCB1A6;
+$beige: #EBDCBF;
+$azul: #0E1E38;
+$rojo: #901817;
+$cafe: #A5706A;
+
+body{
+	background: $piel;
+	font-family: $tipo;
+}
+
+h1 {
+  color: $rojo;
+  font-size: 3em;
+  text-align:center;
+  padding: 20px 0;
+}
+a{
+	text-decoration:none;
+}
+p, a{
+	
+}
+
+contentarea{
+	display: block;
+	padding: 8px;
+	background: $piel + 60;
+	width: 90%;
+	margin: 0 auto;
+	p{
+		color: $azul + 100;
+		font-size: 0.9em;
+		letter-separation: 1px;
+	}
+}
+
+nav{
+	ul{
+	@include display-flex(flex);
+	@include justify-content(center);
+	padding: 30px 0;
+		li{
+			a{
+				margin: 0 12px;
+				padding: 8px 12px;
+				background: $cafe;
+				color: $cafe + 80;
+				@include border-radius(5px);
+			}
+		}
+	}
+}
+
+footer{
+	text-align: center;
+	font-size: 0.8em;
+	padding: 20px 0;
+}
+
